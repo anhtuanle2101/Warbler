@@ -36,7 +36,6 @@ class UserViewTestCase(TestCase):
 
         db.session.commit()
 
-    # When you’re logged in, can you see the follower / following pages for any user?
     def test_log_in(self):
         with self.client as c:
             with c.session_transaction() as s:
